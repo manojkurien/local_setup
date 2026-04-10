@@ -19,17 +19,16 @@ nvim
 ## What's Included
 
 - **Neovim** - NvChad config with lazy.nvim
-- **Zsh** - Oh-My-Zsh config with aliases and tools
+- **Zsh** - Vanilla zsh config with aliases and tools
 - **Vim** - Basic vim configuration
 
 ## Prerequisites
 
 Install these before running the installer:
 
-- [Oh-My-Zsh](https://ohmyz.sh/)
+- [Starship](https://starship.rs/) (prompt)
 - [pyenv](https://github.com/pyenv/pyenv)
 - [nvm](https://github.com/nvm-sh/nvm)
-- A Nerd Font (for terminal icons)
 
 ## How It Works
 

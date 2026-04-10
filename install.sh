@@ -11,6 +11,12 @@ if ! command -v starship &>/dev/null; then
     brew install starship
 fi
 
+# Nerd Font
+if ! fc-list | grep -qi "JetBrainsMono Nerd Font\|JetBrains Mono NF"; then
+    echo "Installing Nerd Font..."
+    brew install --cask font-jetbrains-mono-nerd-font
+fi
+
 # Neovim config
 if [ -e "$HOME/.config/nvim" ]; then
     echo "⚠️  ~/.config/nvim already exists. Skipping..."
