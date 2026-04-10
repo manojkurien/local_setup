@@ -1,0 +1,6 @@
+# Local private config
+.zshrc.local
+
+# Neovim runtime files
+.config/nvim/lazy-lock.json
+.config/nvim/.lazy/

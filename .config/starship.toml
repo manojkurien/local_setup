@@ -1,0 +1,12 @@
+# Move python/venv to the prompt line and show only the venv name
+# Default format with $python removed from info line and placed before $character
+format = """
+$directory$git_branch$git_commit$git_state$git_metrics$git_status$hg_branch\
+$docker_context$package$c$cmake$dart$deno$dotnet$elixir$elm$erlang$golang\
+$haskell$helm$java$julia$kotlin$lua$nim$nodejs$ocaml$perl$php$purescript\
+$raku$rlang$ruby$rust$scala$swift$terraform$vlang$zig$buf$nix_shell$conda\
+$memory_usage$aws$gcloud$openstack$azure$env_var$custom$sudo$cmd_duration\
+$line_break$jobs$status$container$os$shell$python$character"""
+
+[python]
+format = '(\($virtualenv\)) '
