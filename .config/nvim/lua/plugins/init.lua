@@ -28,6 +28,13 @@ return {
   -- { import = "nvchad.blink.lazyspec" },
 
   {
+    "m4xshen/hardtime.nvim",
+    dependencies = { "MunifTanjim/nui.nvim" },
+    event = "VeryLazy",
+    opts = {},
+  },
+
+  {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",
     opts = {
