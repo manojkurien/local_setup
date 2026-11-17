@@ -9,11 +9,9 @@ local options = {
     -- html = { "prettier" },
   },
 
-  -- format_on_save = {
-  --   -- These options will be passed to conform.format()
-  --   timeout_ms = 500,
-  --   lsp_fallback = true,
-  -- },
+  -- format_on_save deliberately omitted: it rewrote files on every :w/:wq,
+  -- including filetypes with no configured formatter (via lsp_fallback).
+  -- Format manually with <leader>fm instead.
 }
 
 return options

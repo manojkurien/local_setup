@@ -24,3 +24,10 @@ map("n", "<leader>n", function()
 end, { desc = "Toggle line numbers" })
 
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
+
+-- Open personal cheatsheet
+map("n", "<leader>?", function()
+  local path = vim.fn.stdpath("config") .. "/cheatsheet.md"
+  vim.cmd("vsplit " .. path)
+  vim.cmd("setlocal readonly nomodifiable")
+end, { desc = "Open cheatsheet" })

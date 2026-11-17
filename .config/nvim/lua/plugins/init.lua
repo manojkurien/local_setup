@@ -1,7 +1,7 @@
 return {
   {
     "stevearc/conform.nvim",
-    -- event = 'BufWritePre', -- uncomment for format on save
+    cmd = "ConformInfo",
     opts = require "configs.conform",
   },
 
@@ -26,6 +26,29 @@ return {
   -- vim.lsp.enable('pyright')
   -- test new blink
   -- { import = "nvchad.blink.lazyspec" },
+
+  -- Practice games: :VimBeGood to launch (dodge, hjkl, relative jump, etc.)
+  {
+    "ThePrimeagen/vim-be-good",
+    cmd = "VimBeGood",
+  },
+
+  -- Extended text objects: daf=delete func, viq=inner quote, va,=func arg, etc.
+  {
+    "echasnovski/mini.ai",
+    version = "*",
+    event = "VeryLazy",
+    opts = {},
+  },
+
+  -- Surround: ys<motion><char> add, cs<old><new> change, ds<char> delete
+  -- Examples: ysiw" wraps word in quotes, cs"' changes " to ', dst removes tag
+  {
+    "kylechui/nvim-surround",
+    version = "*",
+    event = "VeryLazy",
+    opts = {},
+  },
 
   {
     "m4xshen/hardtime.nvim",

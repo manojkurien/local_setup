@@ -26,7 +26,7 @@ require("lazy").setup({
     import = "nvchad.plugins",
   },
 
-  { import = "plugins" }, {'nvim-telescope/telescope.nvim', tag= '0.1.8'}
+  { import = "plugins" },
 }, lazy_config)
 
 -- load theme
