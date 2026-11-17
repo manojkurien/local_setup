@@ -2,6 +2,7 @@
 alias tf="terraform"
 alias ll="ls -lah"
 alias c="~/.local/bin/claude"
+alias gaa="git add -u"
 # Local/private aliases (gitignored)
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
 
@@ -19,6 +20,8 @@ alias gpf="git push --force-with-lease"
 alias gc="git commit --verbose"
 alias gcc="gc --no-verify"
 alias gca="gcc --amend"
+alias gco="git checkout"
+alias gcb="git checkout -b"
 alias gst="git status"
 alias ga="git add"
 alias glo="git log --oneline --decorate"
@@ -120,3 +123,5 @@ export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
 # Prompt
 eval "$(starship init zsh)"
+
+eval "$(zoxide init zsh)"
